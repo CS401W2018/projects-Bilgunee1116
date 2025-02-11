@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('mike.jpg') rgb(0, 0, 111);
+    /*
+    background-color: rgb(0, 0, 111);
+    background-image: url('mike.jpg');
+    */
+    color: white;
+}
+
+header {
+    background: url('ncaa.png') top right no-repeat;
+    /*
+    background-image: url('ncaa.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    */
+    color: white;
+}
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
