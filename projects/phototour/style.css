@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+
+    /* Applying multiple background images */
+    background-image: url('bg.jpg');  
+    background-position: bottom center, top left; /* Decorative image at bottom right, texture at top left */
+    background-repeat: no-repeat, repeat; /* Texture repeats, decorative image does not */
+    background-size: auto, cover; /* Texture covers the page, decorative image stays original size */
+    color: rgb(216, 250, 143);
+}
+
+
+nav a {
+    color: #22DD22;
+}
+
+.current {
+    color: #BBB;
+}
+footer {
+    color:aqua;
+}
