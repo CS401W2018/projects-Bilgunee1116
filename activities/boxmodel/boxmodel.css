@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+Header {
+    background-color: burlywood;
+    width: 70%;
+    margin: 100px;
+    padding: 50px 25px 100px;
+}
+
+header h1 {
+    border: 10px solid #000;
+    padding: 1cm;
+}
