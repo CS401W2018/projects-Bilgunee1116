@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(109, 109, 215);
+}
+nav a {
+    display:inline;
+    padding: 5px 10px;
+    background-color: rgb(72, 198, 198);
+    color:white;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    color: greenyellow;
+    background-color: rgb(181, 74, 74);
+    text-decoration: underline;
+}
+
+#wrapper {
+    width: 200px;
+    background-color: white;
+    margin: 20px auto;
+    border: thin solid red;
+    border-radius: 5px;
+
+}
