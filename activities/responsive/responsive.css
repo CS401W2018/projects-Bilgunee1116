@@ -40,3 +40,23 @@ nav a {
 .card img {
     width: 100%;
 }
+@media ONLY screen AND (max-width: 600px) {
+    .card {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+    .feature {
+        order: -1;
+    }
+}
+
+@media ONLY screen AND (max-width:450px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        border-radius: 0;
+        border-bottom: thin solid #FFF;
+    }
+}
