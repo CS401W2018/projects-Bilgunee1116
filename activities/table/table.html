@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <header><h1>Web Design</h1></header>
+    <main>
+        <h1>Tables</h1>
+        <table border="1">
+            <thead>
+            <tr>
+                <th>Department</th>
+                <th>Number</th>
+                <th>Time</th>
+                <th>Location</th>
+                <th>Credits</th>
+            </tr>
+            </thead>   
+            <tbody>
+            <tr>
+                <th colspan="5">Winter 2025</th>
+            </tr>
+            <tr>
+                <td>CS</td>
+                <td rowspan="2">140</td>
+                <td>11:00-11:50AM</td>
+                <td>P2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS</td>
+                <td>12:00-12:50PM</td>
+                <td>P3</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CS</td>
+                <td>210</td>
+                <td>2:00-2:50PM</td>
+                <td>P2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <th id="sping2025"colspan="5">Spring 2025</th>
+            </tr>
+            <tr>
+                <td>CS</td>
+                <td>140</td>
+                <td>3:00-3:50PM</td>
+                <td>P3</td>
+                <td>3</td>
+            </tr>
+        </tbody> 
+            <tr>
+                <th id="totalcredits" colspan="4">Total Credits</th>
+                <td headers="totalcredits">15</td>
+            </tr>
+        </table>
+        <h3><p>1. We use a table when you need to organize information in rows and columns, like comparing prices, schedules, or statistics.</p></h3>
+        <h3><p>2. We do not use a table when listing simple items, writing paragraphs, or when the information does not need a structured layout.</p></h3>
+        <h3><p>3. We need to do extra work for table accessibility when the table is complex, has merged cells, or multiple headers, so screen readers can understand it properly.</p></h3>
+    </main>
+    <footer>
+        <p>&copy; 2025 Bilguun Enkhbaatar</p>
+    </footer>
+    
+</body>
+</html>
