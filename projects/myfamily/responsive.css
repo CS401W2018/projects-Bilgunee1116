@@ -11,19 +11,19 @@ main {
     display: flex;
 }
 header {
-    background-color: aquamarine;
+    background-color: rgb(37, 175, 129);
 }
 
 nav {
     display: flex;
     justify-content: space-evenly;
-    background-color: blueviolet;
+    background-color: rgb(155, 135, 175);
 }
 
 nav a {
     display: block;
     padding: 10px;
-    background-color: rgb(53, 151, 118);
+    background-color: rgb(153, 56, 0);
     color: white;
     text-decoration: none;
     border-radius: 5px;
