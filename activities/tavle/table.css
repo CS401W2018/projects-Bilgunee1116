@@ -1,0 +1,31 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.schedule {
+    /*border: 1px solid #000000;
+    box-shadow: 3px 3px 3px rgb(30,30,30,0.5);*/
+    caption-side:bottom;
+    border-spacing: 2px;
+    border-collapse: collapsef;
+    
+}
+.schedule th, .schedule td {
+    /*border: thin solid #000; */
+    padding: 5px;
+}
+
+.schedule thead th {
+    background-color: rgb(5,5,97);
+    color: #fff;
+}
+
+.schedule tfoot th {
+    background-color: rgb(5,5,97);
+    color: white;
+}
+.schedule tbody tr:nth-child(4){
+    background-color: aqua;
+}
+
+
