@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header><h1>Web Design</h1></header>
+    <main>
+        <form action="processing.html" method="get">
+            <div class="form-row">
+                <label for="frame">Full name:</label>
+                <input type="text" name="fullname" id="frame" value="Bilguun">
+            </div>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="your@email.com">
+            </div>
+            <div class="form-row">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="form-row">
+                <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="blank"></option>
+                    <option value="HI" selected> Hawaii</option>
+                    <option value="CA">California</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div>
+                <div>Year in School:</div>
+                <label><input type="radio" name="year" value="freshmen"> Freshmen</label>
+                <label><input type="radio" name="year" value="freshmen"> Sophomore</label>
+                <label><input type="radio" name="year" value="freshmen"> Junior</label>
+                <label><input type="radio" name="year" value="freshmen"> Senior</label>
+            </div>
+            <div class="form-row">
+                <input type="submit">
+            </div>
+        </form>
+    </main>
+    <p>1.The "action" attribute in a form tag tells the browser where to send the form data after the user submits it. It is usually a URL of a webpage or a script that will process the form data.</p>
+    <p>2.The "method" attribute tells the browser how to send the form data to the server.</p>
+    <p>3. a. GET - Sends the data in the URL.</p>
+    <p>b. POST – Sends the data in the request body (hidden from the URL).</p>
+
+    
+    <footer>
+        <p>&copy; 2025 Bilguun Enkhbaatar</p>
+    </footer>
+</body>
+</html>
