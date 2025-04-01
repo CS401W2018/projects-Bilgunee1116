@@ -56,14 +56,59 @@
                     <div class="form-spacer"></div>
                     <input type="submit">
                 </div>
+                <div id="responseMessage"></div>
             </fieldset>
         </form>
     </main>
     <p></p>
-    <p></p>
+
     
     <footer>
         <p>&copy; 2025 Bilguun Enkhbaatar</p>
     </footer>
 </body>
 </html>
+<script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      var fullname = document.getElementById('fullname').value;
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+      var age = document.getElementById('age').value;
+      
+      if (!fullname || !email) {
+        alert("Please fill in your full name and email.");
+        return;
+      }
+      
+      if (!age || age < 18) {
+        alert("You must be at least 18 years old.");
+        return;
+      }
+      
+      var formData = {
+        fullname: fullname,
+        email: email,
+        password: password,
+        age: age
+      };
+      
+      console.log(formData);
+      
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "response.json", true);
+      
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          var response = JSON.parse(xhr.responseText);
+          document.getElementById('responseMessage').innerText = response.message;
+          document.getElementById('myForm').reset();
+        } else {
+          alert("There was an error. Please try again.");
+        }
+      };
+      
+      xhr.send();
+    });
+    </script>
