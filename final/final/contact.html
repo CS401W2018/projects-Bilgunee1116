@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="career.html">Career Highlights</a></li>
+        <li><a href="stats.html">Game Stats</a></li>
+        <li><a href="fanmoments.html">Fan Moments</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Share Your Curry Moment</h1>
+    <form id="fanForm">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" required><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" required><br><br>
+
+      <label for="location">Where did you see Curry?</label><br>
+      <input type="text" id="location" required><br><br>
+
+      <label for="message">Tell us your story:</label><br>
+      <textarea id="message" rows="5" required></textarea><br><br>
+
+      <button type="submit">Send</button>
+    </form>
+    <p id="confirmation" style="color: green; font-weight: bold;"></p>
+  </main>
+
+  <script>
+    document.getElementById('fanForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('confirmation').textContent = "Thank you! Your story was submitted successfully.";
+      this.reset();
+    });
+  </script>
+</body>
+</html>
